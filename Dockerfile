@@ -10,7 +10,7 @@ COPY . .
 RUN npm run build
 
 # --- Tahap 2: Membangun Image Produksi (PHP/Nginx) ---
-FROM bref/fpm-nginx-laravel-11:php-8.3-fpm-ARM AS final
+FROM bref/fpm-nginx-laravel-11:php-8.3-fpm AS final
 WORKDIR /app
 
 # Salin file-file penting dari root
